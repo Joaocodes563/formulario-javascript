@@ -27,28 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const inputName = document.querySelector("#nome");
+  
+const inputsvalidate = document.querySelectorAll("#nome, #cidade, #edereco");
 
-  console.log(inputName);
-
-  inputName.addEventListener("keypress", function(e) {
-
+inputsvalidate.forEach((input) => {
+   input.addEventListener('keypress',function(e){
     const keycode = (e.keyCode ? e.keyCode : e.wich);
     if (keycode > 47 && keycode < 58) {
       e.preventDefault();
     }
-  }) 
+   })
 });
-
-
-const inputName = document.querySelector("#cidade");
-
-console.log(inputName);
-
-inputName.addEventListener("keypress", function(e) {
-
-  const keycode = (e.keyCode ? e.keyCode : e.wich);
-  if (keycode > 47 && keycode < 58) {
-    e.preventDefault();
-  }
-});
+}) 
