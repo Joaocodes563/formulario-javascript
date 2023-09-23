@@ -39,3 +39,9 @@ inputsvalidate.forEach((input) => {
    })
 });
 }) 
+
+const inputnumber = document.querySelectorAll("#telefone, #cpf, #numero_residencial");
+
+function validarNumero(input) {
+  input.value = input.value.replace(/[^0-9.-]/g, '');
+}
