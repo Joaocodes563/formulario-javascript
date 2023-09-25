@@ -40,8 +40,22 @@ inputsvalidate.forEach((input) => {
 });
 }) 
 
-const inputnumber = document.querySelectorAll("#telefone, #cpf, #numero_residencial");
+const inputnumber = document.querySelectorAll("#telefone, #numero_residencial");
 
 function validarNumero(input) {
   input.value = input.value.replace(/[^0-9.-]/g, '');
 }
+
+var inputTelefone = document.getElementById("telefone");
+var contador = document.getElementById("contador");
+
+inputTelefone.addEventListener("input", function () {
+  var valor = inputTelefone.value;
+  
+  if (valor.length <= 11) {
+    contador.textContent = valor.length;
+  }
+  else {
+    inputTelefone.value = valor.slice(0,11);
+  }
+});
