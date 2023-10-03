@@ -11,33 +11,29 @@
     <section class="container">
       <h1>Cadastro de Cliente</h1>
       <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Ex: José Maria Silva" name="nome" required />
+        <label class="nomes" for="nome">Nome:</label>
+        <input type="text" id="nome-sobrenome" placeholder="Ex: José Maria" name="nome" required />
 
-        <label for="telefone">Telefone::</label>
-        <input type="tel" id="telefone" placeholder="Ex:(xx)xxxxx-xxxx" oninput="validarNumero(this)" name="telefone" required/>
-        <span id="contador"></span>
+        <label class="nomes" for="nome">Sobrenome:</label>
+        <input type="text" id="nome-sobrenome" placeholder="Ex Silva" name="sobrenome" required>
 
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="fulano@email.com" name="email" required />
 
-        <label for="Cidade">Cidade:</label>
-        <input type="text" id="cidade" placeholder="Digite o nome da sua cidade" name="cidade" required />
+        <label for="Senha">Digite sua Senha</label>
+        <input type="password" id="senha" placeholder="Senha de no minimo 8 digitos" name="senhas" required>
 
-        <label for="nome">Endereço:</label>
-        <input type="text" id="endereco" placeholder="Ex: Rua São Paulo" name="endereco" required />
+        <label for="Senha">Confirme sua Senha</label>
+        <input type="password" id="senha" placeholder="Confirme sua senha" name="senhas" required>
 
-        <label for="nome">Número Residencial:</label>
-        <input
-          type="text"
-          id="numero_residencial"
-          placeholder="Digite o número da sua residência"
-          oninput="validarNumero(this)"
-          name="numero_residencial"
-          required
-        />
+        <label for="telefone">Telefone::</label>
+        <input type="tel" id="telefone" placeholder="Ex:(xx)xxxxx-xxxx" oninput="validarNumero(this)" name="telefone" required/>
+      
 
-        <button type="submit" class="botao">Enviar</button>
+         <button class="imagem-perfil">
+          <img id="foto-perfil" src="imagens/cadastro.png" alt="Foto cadastro">
+         </button>
+        <button id="botao-enviar" type="submit" class="botao">Enviar</button>
       </form>
     </section>
   </body>
