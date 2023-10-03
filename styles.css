@@ -1,20 +1,21 @@
 body {
 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: cornflowerblue;
+    background-color: rgb(98, 144, 230);
 }
 
 .container {
 
-    width: 33%;
+    width: 500px;
     margin: auto;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     background-color: white;
     display: block;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 h1 {
@@ -58,12 +59,18 @@ button {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: #cac9c9;
+    
     color: white;
     border: none;
     font-size: 18px;
     width: 50%;
     margin: auto;
+    cursor: pointer;
+}
+
+.botao.disabled {
+    background-color: #c9cac9;
+    cursor: not-allowed;
 }
 
 .imagem-perfil {
@@ -76,7 +83,7 @@ button {
     right: 0%;
     position: absolute;
     margin-top: 0px;
-    margin-right: 800px;
+    margin-right: 830px;
     
 }
 
@@ -88,7 +95,7 @@ button {
 
 }
 
-button:hover {
+button:hover .botao-enviar {
 
     background-color: rgb(63, 172, 72);
 }

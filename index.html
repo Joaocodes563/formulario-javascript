@@ -12,30 +12,31 @@
       <h1>Cadastro de Cliente</h1>
       <form>
         <label class="nomes" for="nome">Nome:</label>
-        <input type="text" id="nome-sobrenome" placeholder="Ex: José Maria" name="nome" required />
+        <input type="text" id="nome-sobrenome param1" placeholder="Ex: José Maria" name="nome" required />
 
         <label class="nomes" for="nome">Sobrenome:</label>
-        <input type="text" id="nome-sobrenome" placeholder="Ex Silva" name="sobrenome" required>
+        <input type="text" id="nome-sobrenome param2" placeholder="Ex Silva" name="sobrenome" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="fulano@email.com" name="email" required />
+        <input type="email" id="email param3" placeholder="fulano@email.com" name="email" required />
 
         <label for="Senha">Digite sua Senha</label>
-        <input type="password" id="senha" placeholder="Senha de no minimo 8 digitos" name="senhas" required>
+        <input type="password" id="senha param4" placeholder="Senha de no minimo 8 digitos" name="senhas" required>
 
         <label for="Senha">Confirme sua Senha</label>
-        <input type="password" id="senha" placeholder="Confirme sua senha" name="senhas" required>
+        <input type="password" id="senha param5" placeholder="Confirme sua senha" name="senhas" required>
 
         <label for="telefone">Telefone::</label>
-        <input type="tel" id="telefone" placeholder="Ex:(xx)xxxxx-xxxx" oninput="validarNumero(this)" name="telefone" required/>
+        <input type="tel" id="telefone param6" placeholder="Ex:(xx)xxxxx-xxxx" oninput="validarNumero(this)" name="telefone" required/>
       
 
          <button class="imagem-perfil">
           <img id="foto-perfil" src="imagens/cadastro.png" alt="Foto cadastro">
          </button>
-        <button id="botao-enviar" type="submit" class="botao">Enviar</button>
+        <button id="botao-enviar" type="submit" class="botao" onclick="SubmitForm()">Enviar</button>
       </form>
     </section>
   </body>
+  <script src="index.js"></script>
   <script src="main.js"></script>
 </html>

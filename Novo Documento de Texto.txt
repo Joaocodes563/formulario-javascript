@@ -1,0 +1,14 @@
+        <label for="Cidade">Cidade:</label>
+        <input type="text" id="cidade" placeholder="Digite o nome da sua cidade" name="cidade" required />
+
+        <label for="nome">Endereço:</label>
+        <input type="text" id="endereco" placeholder="Ex: Rua São Paulo" name="endereco" required />
+
+        <label for="nome">Número Residencial:</label>
+        <input
+          type="text"
+          id="numero_residencial"
+          placeholder="Digite o número da sua residência"
+          oninput="validarNumero(this)"
+          name="numero_residencial"
+          required
