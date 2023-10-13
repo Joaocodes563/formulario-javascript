@@ -67,7 +67,8 @@ button {
     width: 50%;
     margin: auto;
     cursor: pointer;
-    top: 23px;
+    top: 20px;
+    box-shadow: 1px 1px 4px black
 }
 
 .botao.disabled {
