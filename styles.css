@@ -45,6 +45,7 @@ input {
 
     padding: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 
@@ -56,6 +57,7 @@ button {
 
 .botao {
     
+    position: relative;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
@@ -65,6 +67,7 @@ button {
     width: 50%;
     margin: auto;
     cursor: pointer;
+    top: 23px;
 }
 
 .botao.disabled {
@@ -73,9 +76,19 @@ button {
 }
 
 figure.foto-legenda figcaption {
-
-
-    
+    opacity: 0;
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    transition: 1s;
+    height: 14%;
+    width: 95px;
+    text-align: center;
+    border-radius: 15%;
+    left: 429px;
+    top: 9px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 figure.foto-legenda img{
@@ -93,11 +106,11 @@ figure.foto-legenda img{
 
 }
 
-figure.foto-legenda:hover img {
+figure.foto-legenda:hover figcaption {
     opacity: 0.9;
 }
 
 button:hover .botao-enviar {
 
-    background-color: rgb(63, 172, 72);
+    background-color: rgb(56, 204, 68);
 }
