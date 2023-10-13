@@ -59,7 +59,6 @@ button {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    
     color: white;
     border: none;
     font-size: 18px;
@@ -73,26 +72,29 @@ button {
     cursor: not-allowed;
 }
 
-.imagem-perfil {
+figure.foto-legenda figcaption {
 
-    margin: auto;
-    border: solid;
-    border-color: rgb(128, 128, 248);
-    border-radius: 15%;
-    top: 0%;
-    right: 0%;
-    position: absolute;
-    margin-top: 0px;
-    margin-right: 830px;
+
     
 }
 
-#foto-perfil {
-
-    height: auto;
-    width: 80px;
+figure.foto-legenda img{
+    box-shadow: 1px 1px 3px black;
+    background-color: white;
+    position: absolute;
+    right: 61%;
+    top: 1%;
+    border: 2px solid;
+    border-radius: 15%;
+    border-color: rgb(56, 204, 68);
+    height: 14%;
+    width: 95px;
     
 
+}
+
+figure.foto-legenda:hover img {
+    opacity: 0.9;
 }
 
 button:hover .botao-enviar {
